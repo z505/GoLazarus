@@ -5,16 +5,17 @@ Project status: just started, and will just be a prototype to prove the concept 
 
 ## For now, some notes
 
-Extend the Lazarus IDE with code tools and lazideintf
+How to compile a go exe? Idea: compile go code first, then allow lazarus to build the project after go code is compiled. When user hits F9 or compile button, AddHandlerOnLazarusBuilding should be the way to make an event that is fired to first compile go code. Then add messages to the status window compiling the go code using IDEMsgIntf unit.
 
-In lazideintf is the ability to detect compilation of fpc code (after, before):
+Extend the Lazarus IDE with Codetools, IDEMsgIntf, and Lazideintf units
+
+In lazideintf is the ability to detect compilation of fpc code (before, after):
 * after compile: LazarusIDE.AddHandlerOnProjectBuildingFinished(@MyEvent);
 * ide after build: LazarusIDE.AddHandlerOnLazarusBuildingFinished(@MyEvent);
 * before compile: AddHandlerOnLazarusBuilding
 * lihtProjectBuilding, lihtProjectBuildingFinished is a TLazarusIDEHandlerType
 
 Add golang compilation messages using:
-
 ```
 unit IDEMsgIntf;
 ...
