@@ -3,7 +3,7 @@ Plugin for lazarus to use GoLang in Lazarus apps, via simple IPC lib. Create vis
 
 Project status: just started, and will just be a prototype to prove the concept will work, then more work could follow later to make it more than just a prototype.
 
-For now, some notes:
+## For now, some notes
 
 Extend the Lazarus IDE with code tools and lazideintf
 
