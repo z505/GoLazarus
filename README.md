@@ -4,9 +4,15 @@ Plugin for lazarus to use GoLang in apps, via simple IPC lib. Example: link up a
 For now, some notes:
 
 Extend the Lazarus IDE with code tools and lazideintf
+
+In lazideintf is the ability to detect compilation:
+* LazarusIDE.AddHandlerOnProjectBuildingFinished(@MyEvent);
+* LazarusIDE.AddHandlerOnLazarusBuildingFinished(@MyEvent);
+
 Add golang compilation messages using:
 
-'''unit IDEMsgIntf;
+```
+unit IDEMsgIntf;
 ...
 var Dir: String;
 begin
@@ -14,4 +20,5 @@ begin
   IDEMessagesWindow.BeginBlock;
   IDEMessagesWindow.AddMsg('gocode.go(30,4) Error: some go compile error here',Dir,0);
   IDEMessagesWindow.EndBlock;
-end;'''
+end;
+```
