@@ -27,3 +27,8 @@ begin
   IDEMessagesWindow.EndBlock;
 end;
 ```
+Add source code to a fpc source file, to call a procedure that then sends a message to the go executable:
+```
+CodeToolBoss.InsertStatements();
+```
+There may be another way without using CodeToolBoss, in intf related units
