@@ -5,7 +5,7 @@ Project status: just started, and will just be a prototype to prove the concept 
 
 ## For now, some notes
 
-How to compile a go exe? Idea: compile go code first, then allow lazarus to build the project after go code is compiled. When user hits F9 or compile button, AddHandlerOnLazarusBuilding should be the way to make an event that is fired to first compile go code. Then add messages to the status window compiling the go code using IDEMsgIntf unit.
+How to compile a go exe? Idea: compile go code first, then allow lazarus to build the project after go code is compiled. When user hits F9 or compile button, AddHandlerOnLazarusBuilding should be the way to make an event that is fired to first compile go code. Then add go compiler messages to the status window using IDEMsgIntf unit.  Figure out how to make the IDE open a go file if there is a go compilation error in the status window.. go compiler message format is slightly different for line number location of the error. FPC is i.e (1,10)
 
 Extend the Lazarus IDE with Codetools, IDEMsgIntf, and Lazideintf units
 
