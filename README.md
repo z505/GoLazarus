@@ -7,9 +7,11 @@ Project status: just started, and will just be a prototype to prove the concept 
 
 Extend the Lazarus IDE with code tools and lazideintf
 
-In lazideintf is the ability to detect compilation:
-* LazarusIDE.AddHandlerOnProjectBuildingFinished(@MyEvent);
-* LazarusIDE.AddHandlerOnLazarusBuildingFinished(@MyEvent);
+In lazideintf is the ability to detect compilation of fpc code (after, before):
+* after compile: LazarusIDE.AddHandlerOnProjectBuildingFinished(@MyEvent);
+* ide after build: LazarusIDE.AddHandlerOnLazarusBuildingFinished(@MyEvent);
+* before compile: AddHandlerOnLazarusBuilding
+* lihtProjectBuilding, lihtProjectBuildingFinished is a TLazarusIDEHandlerType
 
 Add golang compilation messages using:
 
