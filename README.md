@@ -31,4 +31,6 @@ Add source code to a fpc source file, to call a procedure that then sends a mess
 ```
 CodeToolBoss.InsertStatements();
 ```
-There may be another way without using CodeToolBoss, in intf related units
+There may be another way without using CodeToolBoss, in intf related units. Such as:
+* Building lazarus with -dEnableCodeCompleteTemplates
+* then inserting code that way between begin/end
