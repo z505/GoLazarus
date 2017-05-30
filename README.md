@@ -34,3 +34,8 @@ CodeToolBoss.InsertStatements();
 There may be another way without using CodeToolBoss, in intf related units. Such as:
 * Building lazarus with -dEnableCodeCompleteTemplates
 * then inserting code that way between begin/end
+
+## Hooking the Events for widgets in the IDE
+Need a way to hook into the IDE which can insert code every time an event is added through double clicking the widget or double clicking the event in the object inspector. Related code in Lazarus source code when this happens:
+* ValueEditDblClick, ToggleRow, DoCallEdit, in objectinspector.pp
+* form widget double clicked: ???
