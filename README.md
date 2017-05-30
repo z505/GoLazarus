@@ -40,5 +40,6 @@ Need a way to hook into the IDE which can insert code every time an event is add
 * ValueEditDblClick, ToggleRow, DoCallEdit, in objectinspector.pp
 * .RefreshValueEdit (but not called when widget double clicked)
 * form widget double clicked: ???
+
 The form editor: when a widget is double clicked, the Edit method is called, which if not a complex widget that has no editing, ends up inserting code into the IDE, i.e. a button is double clicked and it inserts the onclick event. From lazarus wiki:
 * *"The most important method of a component editor is Edit, which is called when the component is double clicked. When the context menu for the component is invoked the GetVerbCount and GetVerb methods are called to build the menu. If one of the verbs (which means menu items in this case) are selected, ExecuteVerb is called. There is a default component editor (TDefaultEditor) which implements Edit to search the properties of the component for the most appropriate one to be edited. It usually chooses an event, which is edited by adding it's skeleton code in the code editor and setting the cursor to be in place to add code for it. "*
