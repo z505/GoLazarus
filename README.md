@@ -38,4 +38,5 @@ There may be another way without using CodeToolBoss, in intf related units. Such
 ## Hooking the Events for widgets in the IDE
 Need a way to hook into the IDE which can insert code every time an event is added through double clicking the widget or double clicking the event in the object inspector. Related code in Lazarus source code when this happens:
 * ValueEditDblClick, ToggleRow, DoCallEdit, in objectinspector.pp
+* .RefreshValueEdit (but not called when widget double clicked)
 * form widget double clicked: ???
