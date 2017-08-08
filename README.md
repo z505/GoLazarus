@@ -1,5 +1,7 @@
 # GoLazarus
-Plugin for lazarus to use GoLang in Lazarus apps, via simple IPC lib. Create visual apps using lazarus, but then run Go code from the events fired by the widgets. Example: link up a button event to call go code instead of fpc object pascal code. User will not even need to realize it is IPC in order to code golang algorithms in Lazarus. A button will be linked up to a go function instead of an fpc function; the go code will be located in a go package file.
+Just an idea: This is in planning stages.
+
+Plugin for lazarus to use GoLang in Lazarus apps, via Simple IPC lib (inter process communication). Create visual apps using lazarus, but then run Go code from the events fired by the widgets. Example: link up a button event to call go code instead of fpc object pascal code. User will not even need to realize it is IPC in order to code golang algorithms in Lazarus. A button will be linked up to a go function instead of an fpc function; the go code will be located in a go package file.
 
 Project status: just started, and will just be a prototype to prove the concept will work, then more work could follow later to make it more than just a prototype.
 
